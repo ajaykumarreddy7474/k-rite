@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>K-RITE</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="stylesheet" href="/style.css">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   
+
+
+</head>
+
+<body>
+
+<div class="total-page">
+
+         <section id="menu">
+            <div class="sidebar">
+                           <ul>
+                              <li>
+                                 <div class="logo">
+                                    <img src="/img/hq-logo.jpg" alt="Logo">
+                                       <div class="title">
+                                          <h1>INC</h1>
+                                          <p class="subheading">InnotiveHub</p>
+                                       </div>
+                                       <div class="profile-picture">
+                                          <img src="/img/one.jpg" alt="Profile Picture">
+                                       </div>
+                                    <div class="close">
+                                       <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                    
+                                 </div>
+                              </li>
+                           </ul>
+
+                        <div class="lists">
+                           <ul>
+
+                                 <li class="list-item">
+                                    <div class="item-content">
+                                       <i class="fa-solid fa-pen-nib"></i>
+                                       <span>Design team</span>
+                                       <i class="fa-regular fa-circle-xmark"> + 1</i>
+                                    </div>
+                                 </li>
+                                    <li class="list-item">
+                                       <div class="item-content">
+                                          <i class="fa-solid fa-bullhorn"></i>
+                                          <span>Marketing team</span>
+                                          <i class="fa-regular fa-circle-xmark"> + 2</i>
+                                       </div>
+                                    </li>
+                                    <li class="list-item">
+                                       <div class="item-content">
+                                          <i class="fa-solid fa-code"></i>
+                                          <span>Development team</span>
+                                          <i class="fa-regular fa-circle-xmark"> + 3</i>
+                                       </div>
+                                       </li>
+                                 <li class="list-item cteam2">
+                                    <div>
+                                       <i class="fa-solid fa-square-plus  "></i>
+                                       <span>Create a team</span>
+                                    </div>
+                                 </li>
+                           </ul>
+                        </div>
+
+                        <div class="folders">
+                                    <ul class="lists">
+                                       <li class="list-item">
+                                          <div class="item-content">
+                                             <span>Folders</span>
+                                             <i class="fa-regular fa-plus"></i>
+                                          </div>
+                                       </li>
+                                    </ul>
+
+                                 <ul class="list2">
+                                             <li class="list-item2" id="products-list">
+                                                <div class="item-content2 dropdown-container">
+                                                   <div class="item-content">
+                                                         <i class="fa-regular fa-folder"></i>
+                                                         <span>Products</span>
+                                                         <i id="products-dropdown-btn" class="fa-solid fa-caret-down dropdown-btn"></i>
+                                                   </div>
+                                                   <div id="products-dropdown-menu" class="dropdown-menu">
+                                                         <a href="#">Roadmap</a>
+                                                         <a href="#">Feedback</a>
+                                                         <a href="#">Perfomance</a>
+                                                         <a href="#">Team</a>
+                                                         <a href="#">Analytics</a>
+                                                         <a href="#"><i class="fa-solid fa-square-plus  "></i>
+                                                            <span>Create a team</span></a>
+                                                      
+                                                   </div>
+                                                </div>
+                                                </li>
+                                 <!-- New "Sales" list -->
+                                             <li class="list-item2" id="sales-list">
+                                                <div class="item-content2 dropdown-container">
+                                                   <div class="item-content">
+                                                         <i class="fa-regular fa-folder"></i>
+                                                         <span>Sales</span>
+                                                         <i class="fa-solid fa-caret-down dropdown-btn"></i>
+                                                   </div>
+                                                   
+                                                </div>
+                                             </li>
+                                             <li class="list-item2" id="design-list">
+                                                <div class="item-content2 dropdown-container">
+                                                   <div class="item-content">
+                                                      <i class="fa-regular fa-folder"></i>
+                                                      <span>Design</span>
+                                                      <i class="fa-solid fa-caret-down dropdown-btn"></i>
+                                                   </div>
+                                                </div>
+                                             </li>
+                                          <li class="list-item2" id="design-list">
+                                             <div class="item-content2 dropdown-container">
+                                                <div class="item-content">
+                                                   <i class="fa-regular fa-folder"></i>
+                                                   <span>Office</span>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li class="list-item2" id="design-list">
+                                          <div class="item-content2 dropdown-container">
+                                             <div class="item-content">
+                                                <i class="fa-regular fa-folder"></i>
+                                                <span>Logout</span>
+                                             </div>
+                                          </div>
+                                       </li>
+                           </ul>  
+                        </div>
+
+                        <div class="last-list">
+                           <ul>
+                              <li class="list-item">
+                                 <div class="item-content">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <span>Invite teammates</span>
+                                 
+                                 </div>
+                              </li>
+                              <li class="list-item">
+                                 <div class="item-content">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>Help and first steps</span>
+                                    <i class="fa-solid fa-handshake-angle"></i>
+                                 </div>
+                              </li>
+                     
+                                          <li class="list-item">
+                                             <div class="item-content">
+                                                <i class="fa-solid fa-question"></i>
+                                                <span>days trail left</span>
+                                                <i class="fa-regular1">Add billing</i>
+                                             </div>
+                                          </li>
+                           </ul>
+                        </div>
+            </div>
+         </section>
+<!-- -------------------------------- right ---------------------------------->
+   
+         <div class="right">
+               <div class="top">
+                  <div class="title-1">
+                     <div><i id="menu-btn" class="fa-solid fa-bars"></i></div>
+                     <h1>Products</h1>   
+                  </div>
+                  <div class="user">
+                     <div class="inputbox">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text"  placeholder="Search for.." id="">
+                     </div>
+                     <i class="fa-regular fa-comments"></i>
+                     <i class="fa-solid fa-gear"></i>
+                  
+                  </div>
+               </div>
+               
+               <div class="main-list">
+                  <ul class="left-list">
+                    <li class="list-item4">
+                      <div class="item-content4">
+                        <i class="fa-brands fa-dropbox"></i>
+                        <span>All brands</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                      </div>
+                    </li>
+                    <li class="list-item4">
+                      <div class="item-content4">
+                        <span>Desk</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                      </div>
+                    </li>
+                    <li class="list-item4">
+                      <div class="item-content4">
+                        <span>Tags</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                      </div>
+                    </li>
+                    <li class="list-item4">
+                      <div class="item-content4 greyCol">
+                        <i class="fa-solid fa-arrow-down-z-a"></i>
+                        <span>Sort</span>
+                      </div>
+                    </li>
+                    <li class="list-item4">
+                      <div class="item-content4 greyCol">
+                        <i class="fa-solid fa-arrow-down-z-a"></i>
+                        <span>Filter</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="right-list">
+                    <li class="list-item4 right-item">
+                      <div class="item-content4">
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        <span>meeting</span>
+                      </div>
+                    </li>
+                    <li class="list-item4 right-item">
+                      <div class="item-content4">
+                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                        <span>export/import</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+           
+              <div class="outer-wrapper">
+                  <div class="table-wrapper">
+                              <div class="board">
+                                          <div class="table-container">
+                                                   <table>
+                                                            <thead>
+                                                            <tr >
+                                                               <td class="thead-title">
+                                                                  <em>Brand</em><span class="symbol"> <i class="fa-regular fa-plus"></i></span></td>
+                                                               
+                                                               <td class=" thead-title desp"><h4>Description</h4></td>
+                                                               <td class=" thead-title members"><h4>Members</h4></td>
+                                                               <td class="thead-title  cats"><h4>Categories</h4></td>
+                                                               <td class="thead-title tags"><h4>Tags</h4></td>
+                                                               <td class="thead-title  next"><h4>Next Meeting</h4></td>
+                                                               <td class="thead-title plus"><h4>+</h4></td>
+                                                            
+                                                               
+                                                            </tr>
+                                                            
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                               <td class="tbody-title">
+                                                                  <div class="whole-list">
+                                                                     <input type="checkbox">
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <h4>wix </h4>
+                                                                     
+                                                                  <span class="symbol1"><i class="fa-regular fa-comments"> 2</i></span>
+                                                                  </div>
+                                                            </td>
+                                                               
+                                                               <td class="tbody-title"><h4>Devolop a personalized...</h4></td>
+                                                               <td class="tbody-title images-list">
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <img src="/wix.jpg" alt="">
+                                                                  <img src="/img/pic.png" alt="" >
+                                                               </td>
+                                                               <td class="tbody-title auto "><h4   >Automation</h4></td>
+                                                               <td class="tbody-title auto tags-col"><h4>#DigitalTransfomation</h4><h4>#</h4></td>
+                                                               <td class="tbody-title auto next-meet1"><h4>in 30 minutes</h4></td>
+                                                               <td class="tbody-title "><h4></h4></td>
+                                                            </tr>
+                                                            
+                                                            <tr>
+                                                                     <td class="tbody-title">
+                                                                        <div class="whole-list">
+                                                                     <input type="checkbox">
+                                                                     <img src="/shp.jpg" alt="">
+                                                                     <h4>wix </h4>
+                                                                     <span class="symbol1"><i class="fa-regular fa-comments"> 3</i></span>
+                                                                     </div>
+                                                                     </td>
+                                                               
+                                                               <td class="tbody-title"><h4>Devolop a personalized...</h4></td>
+                                                               <td class="tbody-title images-list">
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <img src="/wix.jpg" alt="">
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/wix.jpg" alt="">
+                                                                  <img src="/shp.jpg" alt="">
+                                                               </td>
+                                                               <td class="tbody-title auto "><h4>Automation</h4><h4>SASS</h4></td>
+                                                               <td class="tbody-title auto tags-col"><h4>#DigitalTransfomation</h4><h4>#</h4></td>
+                                                               <td class="tbody-title auto next-meet1"><h4>in 30 minutes</h4></td>
+                                                               <td class="tbody-title "><h4></h4></td>
+                                                            </tr>
+                                                            
+                                                            <tr>
+                                                               <td class="tbody-title">
+                                                                  <div class="whole-list">
+                                                                     <input type="checkbox">
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <h4>wix </h4>
+                                                               
+                                                                  </div>
+                                                            </td>
+                                                               
+                                                               <td class="tbody-title"><h4>Devolop a personalized...</h4></td>
+                                                               <td class="tbody-title images-list">
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  
+                                                               </td>
+                                                               <td class="tbody-title auto "><h4   >Automation</h4></td>
+                                                               <td class="tbody-title auto tags-col"><h4>#DigitalTransfomation</h4><h4>#</h4></td>
+                                                               <td class="tbody-title auto next-meet1"><h4>in 30 minutes</h4></td>
+                                                               <td class="tbody-title "><h4></h4></td>
+                                                            </tr>
+                                                         
+                                                            <tr>
+                                                               <td class="tbody-title">
+                                                                  <div class="whole-list">
+                                                                     <input type="checkbox">
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <h4>wix </h4>
+                                                                     
+                                                                  <span class="symbol1"><i class="fa-regular fa-comments"> 4</i></span>
+                                                                  </div>
+                                                            </td>
+                                                               
+                                                               <td class="tbody-title"><h4>Devolop a personalized...</h4></td>
+                                                               <td class="tbody-title images-list">
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <img src="/wix.jpg" alt="">
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  
+                                                               </td>
+                                                               <td class="tbody-title auto "><h4   >Automation</h4></td>
+                                                               <td class="tbody-title auto tags-col"><h4>#DigitalTransfomation</h4><h4>#</h4></td>
+                                                               <td class="tbody-title auto next-meet1"><h4>in 30 minutes</h4></td>
+                                                               <td class="tbody-title "><h4></h4></td>
+                                                            </tr>
+                                                         
+                                                            <tr>
+                                                               <td class="tbody-title">
+                                                                  <div class="whole-list">
+                                                                     <input type="checkbox">
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <h4>wix </h4>
+                                                                     
+                                                                  <span class="symbol1"><i class="fa-regular fa-comments"> 2</i></span>
+                                                                  </div>
+                                                            </td>
+                                                               
+                                                               <td class="tbody-title"><h4>Devolop a personalized...</h4></td>
+                                                               <td class="tbody-title images-list">
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <img src="/wix.jpg" alt="">
+                                                               </td>
+                                                               <td class="tbody-title auto "><h4   >Automation</h4></td>
+                                                               <td class="tbody-title auto tags-col"><h4>#DigitalTransfomation</h4><h4>#</h4></td>
+                                                               <td class="tbody-title auto next-meet1"><h4>in 30 minutes</h4></td>
+                                                               <td class="tbody-title "><h4></h4></td>
+                                                            </tr>
+                                                         
+                                                            <tr>
+                                                               <td class="tbody-title">
+                                                                  <div class="whole-list">
+                                                                     <input type="checkbox">
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <h4>wix </h4>
+                                                                     
+                                                            
+                                                                  </div>
+                                                            </td>
+                                                               
+                                                               <td class="tbody-title"><h4>Devolop a personalized...</h4></td>
+                                                               <td class="tbody-title images-list">
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <img src="/wix.jpg" alt="">
+                                                                  <img src="/img/pic.png" alt="" >
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/wix.jpg" alt="">
+                                                                  
+                                                               </td>
+                                                               <td class="tbody-title auto "><h4   >Automation</h4></td>
+                                                               <td class="tbody-title auto tags-col"><h4>#DigitalTransfomation</h4><h4>#</h4></td>
+                                                               <td class="tbody-title auto next-meet1"><h4>in 30 minutes</h4></td>
+                                                               <td class="tbody-title "><h4></h4></td>
+                                                            </tr>
+                                                            
+                                                            <tr>
+                                                               <td class="tbody-title">
+                                                                  <div class="whole-list">
+                                                                     <input type="checkbox">
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <h4>wix </h4>
+                                                                     
+                                                                  <span class="symbol1"><i class="fa-regular fa-comments"> 2</i></span>
+                                                                  </div>
+                                                            </td>
+                                                               
+                                                               <td class="tbody-title"><h4>Devolop a personalized...</h4></td>
+                                                               <td class="tbody-title images-list">
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <img src="/wix.jpg" alt="">
+                                                                  <img src="/pp.jpg" alt="" >
+                                                                  <img src="/shp.jpg" alt="">
+                                                                  <img src="/wix.jpg" alt="">
+                                                               </td>
+                                                               <td class="tbody-title auto "><h4   >Automation</h4></td>
+                                                               <td class="tbody-title auto tags-col"><h4>#DigitalTransfomation</h4><h4>#</h4></td>
+                                                               <td class="tbody-title auto next-meet1"><h4>in 30 minutes</h4></td>
+                                                               <td class="tbody-title "><h4></h4></td>
+                                                            </tr>
+                                                         
+                                                            <tr >
+                                                               <td class="tbody-title">
+                                                                  <div class="whole-list ">
+                                                                  
+                                                                     
+                                                                  <span class="symbol1 ">10 Count</span>
+                                                                  </div>
+                                                            </td>
+                                                               
+                                                               <td class="tbody-title"> <span class="symbol1">+ Add collection</span></td>
+                                                               <td class="tbody-title images-list">
+                                                                  <span class="symbol1">+ Add collection</span>
+                                                               </td>
+                                                               <td class="tbody-title auto ">  <span class="symbol1">+ Add collection</span></td>
+                                                               <td class="tbody-title auto tags-col"> <span class="symbol1">+ Add collection</span></td>
+                                                               <td class="tbody-title auto next-meet2"><h4></h4></td>
+                                                               <td class="tbody-title "><h4></h4></td>
+                                                            </tr>
+                                                            
+                                                            
+                                                         
+                                                         
+                                                         
+                                                         
+                                                            </tbody>
+                                                   </table>
+                                          </div>
+                              </div>
+
+                  
+                  </div>
+               </div>
+   
+               <div class="bottom-container">
+            <div class="container">
+            <div class="item">
+               <span class="icon"><i class="fa-solid fa-3"></i></span>
+               <span class="text">selected</span>
+            </div>
+            <div class="item">
+               <span class="icon"><i class="fa-solid fa-box-archive"></i></span>
+               <span class="text">Archive</span>
+            </div>
+            <div class="item item3">
+               <span class="icon"><i class="fa-solid fa-trash"></i></span>
+               <span class="text">delete</span>
+            </div>
+            <div class="item item2">
+               <span class="text ">more</span>
+               <span class="icon"><i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <div class="item item1">
+               <span class="material-symbols-outlined icon">close</span>
+         
+            </div>
+            
+            </div>
+               </div>
+<!-- ------------------------------ main-list ------------------------------ -->
+ 
+         </div>
+           <script>
+               var productsDropdownButton = document.getElementById("products-dropdown-btn");
+               var productsDropdownMenu = document.getElementById("products-dropdown-menu");
+               var salesDropdownButton = document.getElementById("sales-dropdown-btn");
+               var salesDropdownMenu = document.getElementById("sales-dropdown-menu");
+               var salesList = document.getElementById("sales-list");
+               
+           
+               productsDropdownButton.addEventListener("click", function() {
+                   productsDropdownMenu.style.display = (productsDropdownMenu.style.display === "block") ? "none" : "block";
+                   adjustSalesListPosition(productsDropdownMenu);
+               });
+           
+               function adjustSalesListPosition(dropdownMenu) {
+                   var dropdownHeight = dropdownMenu.offsetHeight;
+                   salesList.style.marginTop = dropdownHeight + "px";
+               }
+
+             
+                 // <!-- ----------------------------- for sidebar ----------------------------- -->
+               
+                 let openBtn = document.getElementById("menu-btn");
+let sideBarContent = document.getElementsByClassName('sidebar')[0]; // Get the first element with class 'sidebar'
+let closeBtn = document.getElementsByClassName('close')[0]; // Get the first element with class 'close'
+
+
+openBtn.addEventListener("click", function() {
+sideBarContent.style.display = 'block';
+});
+
+closeBtn.addEventListener("click", function() {
+   sideBarContent.style.display = 'none';
+   openBtn.style.display = 'block';
+});
+
+
+
+
+
+           </script>
+
+
+
+</body>
+
+</html>
